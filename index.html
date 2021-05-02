@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Political Parties - Riley C</title>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        div.text-box{
+            position: absolute;
+            width: 100%;
+            height: 22vh;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 20px;
+            top: 0%;
+            background-color: white;
+            border-radius: 30px;
+        }
+        div#title{
+            font-weight: 200;
+            font-size: 60px;
+        }
+        div#desc{
+            margin-bottom: -3px;
+        }
+        div#desc2{
+            margin-top: 1px;
+        }
+        div#author{
+            margin-top: 3px;
+            font-size: 14px;
+        }
+        div#instructions{
+            font-size: 15px;
+        }
+        div#matter{
+            padding-top: 20vh;
+        }
+        canvas{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <div class="text-box">
+        <div id="title">Political Parties</div>
+        <div id="desc">A visualization of why Rousseau was critical of parties: they erase uniqueness and limit self-expression.</div>
+        <div id="desc2">Click on the canvas to add people. Starting off uniquely colored, they soon join a party, loosing their individuality.</div>
+        <div id="author">Made by Riley C</div>
+    </div>
+    <div id="matter"></div>
+    <script src="matter.js"></script>
+    <script src="matter-attractors.min.js"></script>
+    <script src="mymatter.js"></script>
+</body>
+</html>
