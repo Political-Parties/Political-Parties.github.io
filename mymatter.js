@@ -1,3 +1,10 @@
+$(document).ready(()=>{
+  if(mobile){
+    $('#oneLine').text("A visualization of why Rousseau was critical of parties: they erase uniqueness and limit self-expression. Drag your finger across the canvas to add people. Starting off uniquely colored, they soon join a party, loosing their individuality.")
+  }
+}
+)
+
 Matter.use(
   'matter-attractors'
 );
