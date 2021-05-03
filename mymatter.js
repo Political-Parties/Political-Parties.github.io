@@ -191,7 +191,7 @@ function makePeople(){
     mouseCircle.position.x,
     mouseCircle.position.y,
     Common.random(1, 5),
-    Common.random() > 0.9 ? Common.random(15, 25) : Common.random(5, 10), {
+    Common.random() > 0.9 ? (mobile ? Common.random(5, 15) : Common.random(15, 25) ): (mobile ? Common.random(3, 11) : Common.random(5, 10) ), {
       render: {
         fillStyle: '#' + (Math.floor((Math.random() * 222) + 33).toString(16)) + (Math.floor((Math.random() * 222) + 33).toString(16)) + (Math.floor((Math.random() * 222) + 33).toString(16))
       }
