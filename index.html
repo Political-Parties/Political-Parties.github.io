@@ -29,7 +29,7 @@
             border-radius: 20px;
             top: 0%;
             background-color: white;
-            border-radius: 30px;
+            border-radius: 17px;
         }
         div#title{
             font-weight: 200;
@@ -45,14 +45,73 @@
             margin-top: 3px;
             font-size: 14px;
         }
-        div#instructions{
-            font-size: 15px;
-        }
         div#matter{
             padding-top: 20vh;
         }
         canvas{
             display: block;
+        }
+
+        div#oneLine{
+            display: none;
+        }
+
+        @media only screen and (max-width: 1200px){
+        /*Tablets [601px -> 1200px]*/
+        div.text-box{
+            position: absolute;
+            width: 100%;
+            height: 22vh;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+        div#title{
+            font-size: 30px;
+        }
+        div#desc{
+            display: none;
+        }
+        div#desc2{
+            display: none;
+        }
+        div#author{
+            margin-top: 3px;
+            font-size: 11px;
+        }
+        div#oneLine{
+            padding: 0px 2em 0.5em 2em;
+            font-size: 12px;
+            display: block;
+        }
+        }
+        @media only screen and (max-width: 600px){
+            /*Big smartphones [426px -> 600px]*/
+            div.text-box{
+            position: absolute;
+            width: 100%;
+            height: 22vh;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+        div#title{
+            font-size: 25px;
+        }
+        div#author{
+            margin-top: 3px;
+            font-size: 12px;
+        }
+        div#oneLine{
+            padding: 0px 2em 0.5em 2em;
+            font-size: 12px;
+            display: block;
+        }
+        }
+        @media only screen and (max-width: 425px){
+            /*Small smartphones [325px -> 425px]*/
         }
     </style>
 </head>
@@ -62,9 +121,11 @@
         <div id="title">Political Parties</div>
         <div id="desc">A visualization of why Rousseau was critical of parties: they erase uniqueness and limit self-expression.</div>
         <div id="desc2">Click on the canvas to add people. Starting off uniquely colored, they soon join a party, loosing their individuality.</div>
+        <div id="oneLine">A visualization of why Rousseau was critical of parties: they erase uniqueness and limit self-expression. Click on the canvas to add people. Starting off uniquely colored, they soon join a party, loosing their individuality.</div>
         <div id="author">Made by Riley C</div>
     </div>
     <div id="matter"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="matter.js"></script>
     <script src="matter-attractors.min.js"></script>
     <script src="mymatter.js"></script>
