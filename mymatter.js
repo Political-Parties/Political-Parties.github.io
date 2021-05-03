@@ -74,10 +74,10 @@ if(render.canvas.width < 1000){
 }
 if(render.canvas.width < 600){
   spacing = spacingOne * 0.15
-  radius = 30
+  radius = 20
 }
 if(render.canvas.width < 400){
-  radius = 20
+  radius = 10
 }
 console.log(render.canvas.width)
 
@@ -170,8 +170,9 @@ matterSpace.addEventListener('mousemove', e => {
 });
 }else{
   $matterSpace.on('touchmove', (e) => {
-    
-    makePeople()
+
+      makePeople()
+
 
     if(e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel'){
       var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
